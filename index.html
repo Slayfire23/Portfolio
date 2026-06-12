@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/01276dfdc1.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saul Diaz</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ZDZuCk2DiWcQ7dz_E",
+      });
+   })();
+</script>
+</head>
+
+<body>
+    <div class="page__loader">
+        <div class="loader__card">
+            <img src="./assets/sdm-transparent.png" class="loader__logo" alt="">
+            <div class="loader__line loader__line--large"></div>
+            <div class="loader__line"></div>
+            <div class="loader__line loader__line--short"></div>
+            <div class="loader__icons">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <section id="landing-page">
+        <nav>
+            <figure>
+                <img id="personal-logo"src="./assets/sdm-transparent.png" alt="Logo" class="nav__logo">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" onclick="toggleModal(); return false;"
+                    class="
+                    nav__link--anchor
+                    nav__hover--effect
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" onclick="closeMobileMenu()"
+                    class="
+                    nav__link--anchor
+                    nav__hover--effect
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">Projects</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" onclick="toggleModal(); return false;"
+                    class="
+                    nav__link--anchor
+                    nav__hover--effect
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">Contact</a>
+                </li>
+                <li class="nav__link click">
+                    <a href="#" onclick="toggleContrast(); closeMobileMenu(); return false;"
+                    class="
+                    nav__link--anchor
+                    nav__hover--effect
+                    link__hover--effect--black
+                    ">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </a>
+                </li>
+            </ul>
+            <button class="btn__menu click" onclick="toggleMobileMenu()" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title cyan">I'm Saul.</h1>
+                <p class="header__para">
+                    I'm a <b class="cyan">Full Stack Developer</b> who enjoys building complete web applications, from intuitive user interfaces to reliable backend systems, with a focus on creating great user experiences. 
+                    <br>
+                    Here's a bit more <b class="cyan">about me.</b>
+                </p>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/saul-diaz23/" target="_blank" class="social__link click" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Slayfire23" target="_blank" class="social__link click" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1XV5Z8q7y9X8Q8Q8Q8Q8Q8Q8Q8Q8Q8Q8/view?usp=sharing" target="_blank" class="social__link click" rel="noopener noreferrer">
+                        <i class="fa-regular fa-file-pdf"></i>
+                    </a>
+                </div>
+           </div>
+        </header>
+        <img src="./assets/semi circle.svg" class="shape shape--semi-circle" alt="">
+        <img src="./assets/squiggly.svg" class="shape shape--squiggly" alt="">
+        <img src="./assets/triangle.svg" class="shape shape--triangle" alt="">
+        <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fa-solid fa-envelope"></i>
+        </button>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about"> Here's a bit about me.</h3>
+                <h4 class="modal__sub-title  modal__sub-title--about">Full Stack Developer</h4>
+                <p class="modal__para">
+                I’m a full stack developer with a passion for building clean, user-friendly web applications from front end to back end. I enjoy creating responsive interfaces, developing reliable application logic, and connecting everything through efficient APIs and databases.
+                <br>
+                I have experience with HTML, CSS, JavaScript, and modern web development tools, and I’m always working to grow my skills across both client-side and server-side development. I enjoy collaborating with teams, solving problems, and turning ideas into functional, polished digital experiences.
+                <br>
+                I’m eager to continue learning, building meaningful projects, and contributing to applications that are useful, scalable, and enjoyable to use.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://th.bing.com/th/id/OIP.sTD3jjh3OYnaOY4GJvP4SAHaHa?w=137&h=150&c=6&o=7&pid=1.7&rm=3" alt="HTML">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                        <span class="language__name">Tailwind CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://th.bing.com/th/id/OIP.GuhU7YU9RRk9LVuj_K0zFQHaHk?w=174&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="HTML">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <span class="language__name">React</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img modal__language--img-next" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+                        <span class="language__name">Next.js</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                        <span class="language__name">Node.js</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        <span class="language__name">TypeScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                        <span class="language__name">PostgreSQL</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">
+                    I'm currently open to new opportunities.
+                </h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input type="text" name="user_name" class="input" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input type="email" name="user_email" class="input" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea type="text" name="message" class="input" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit" type="submit">Send it my way!</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking to you soon.
+                </div>
+            </div>
+            <i class="fas fa-times modal__exit click" onclick="closeModal()"></i>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="cyan">projects.</span>
+                </h1>
+                <div class="project__carousel">
+                    <button class="project__carousel--btn project__carousel--btn-left click" onclick="moveProjectCarousel(-1)" aria-label="Previous project">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/skinstric-project.png" class="project__img" alt="Skinstric AI skincare landing page">
+                            
+                            <div class="project__wrapper--bg">
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Skinstric
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    React, JavaScript, CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    A sophisticated skincare landing experience with clean UI, interactive navigation, and an AI-focused product flow.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/Slayfire23/Skinstric-ai.git" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://skinstric-ai-three.vercel.app/" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/anime-project.png" class="project__img" alt="Anime recommendation app">
+                            
+                            <div class="project__wrapper--bg">
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Anime Search Engine
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, REST API
+                                </h4>
+                                <p class="project__description--para">
+                                    Engineered & integrated a search api for anime with a fully responsive design, loading states & dynamic routing to showcase end users movies on a mass level search and showcase anime on an individual route.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/Slayfire23/Module-5-Final-Project.git" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://slayfire23.github.io/Module-5-Final-Project/" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/netflix-clone.png" class="project__img" alt="Netflix clone sign in page">
+                            
+                            <div class="project__wrapper--bg">
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Netflix Clone
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Next.js, TypeScript, Tailwind CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    A Netflix-inspired streaming interface with a polished sign-in page, responsive layout, and modern frontend architecture.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/Slayfire23/Netflix-clone.git" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://netflix-clone-f9qhnwuvj-saul-diaz-s-projects.vercel.app" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/instagram-clone.png" class="project__img" alt="Instagram clone login page">
+                            
+                            <div class="project__wrapper--bg">
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Instagram Clone
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Next.js, React, JavaScript, CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    An Instagram-inspired login experience with a clean split layout, responsive form styling, and polished social sign-in buttons. Used Supabase and Clerk for the login and the backend.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/Slayfire23/Instagram-clone.git" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="http://instagram-clone-git-main-saul-diaz-s-projects.vercel.app" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                    <button class="project__carousel--btn project__carousel--btn-right click" onclick="moveProjectCarousel(1)" aria-label="Next project">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="project__carousel--dots">
+                    <button class="project__carousel--dot project__carousel--dot-active" onclick="setProjectSlide(0)" aria-label="Show Skinstric project"></button>
+                    <button class="project__carousel--dot" onclick="setProjectSlide(1)" aria-label="Show anime project"></button>
+                    <button class="project__carousel--dot" onclick="setProjectSlide(2)" aria-label="Show Netflix project"></button>
+                    <button class="project__carousel--dot" onclick="setProjectSlide(3)" aria-label="Show Instagram project"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+            <figure>
+                <img class="footer__logo--img" src="./assets/sdm-transparent.png"  alt="">
+            </figure>
+            <div class="footer__social--list">
+                <a href="https://github.com/Slayfire23" target="_blank" rel="noopener noreferrer" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white">
+                Github
+                </a>
+                <a href="#" onclick="toggleModal(); return false;" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white">
+                About
+                </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white">
+                LinkedIn</a>
+                <a href="#" onclick="toggleModal(); return false;" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white">
+                Contact
+                </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white">
+                Resume
+                </a>
+            </div>
+            <div class="footer__copyright">Copyright © Saul Diaz 2026</div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
